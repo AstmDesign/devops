@@ -50,3 +50,7 @@ jobs:
       run: |
         bin/rails test
         # bundle exec rspec -f d
+
+    - name: Deploy new version
+      run: |
+        bundle exec cap production deploy
